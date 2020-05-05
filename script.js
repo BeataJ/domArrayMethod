@@ -23,7 +23,7 @@ async function getRandomUser() {
     money: Math.floor(Math.random() * 1000000),
   };
 
-  addDate(newUser);
+  addData(newUser);
 }
 
 // Add new obj to data arr
