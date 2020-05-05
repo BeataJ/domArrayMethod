@@ -52,3 +52,4 @@ function formatMoney(number) {
 }
 
 addUserBtn.addEventListener('click', getRandomUser);
+doubleBtn.addEventListener('click', doubleMoney);
