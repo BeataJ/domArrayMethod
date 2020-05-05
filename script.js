@@ -1,8 +1,20 @@
 const main = document.getElementById('main');
-const main = document.getElementById('add-user');
-const main = document.getElementById('double');
-const main = document.getElementById('show-millionaires');
-const main = document.getElementById('sort');
-const main = document.getElementById('calculate-wealth');
+const addUserBtn = document.getElementById('add-user');
+const doubleBtn = document.getElementById('double');
+const showMillionersBtn = document.getElementById('show-millionaires');
+const sortBtn = document.getElementById('sort');
+const calculateWealthBtn = document.getElementById('calculate-wealth');
 
 let data = [];
+
+getRandomUser();
+getRandomUser();
+getRandomUser();
+
+// Fetch random user and add money
+async function getRandomUser() {
+  const res = await fetch('https://randomuser.me/api');
+  const data = await res.json();
+
+  console.log(data);
+}
